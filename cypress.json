@@ -1,4 +1,10 @@
 {
     "chromeWebSecurity": false,
-    "failOnStatusCode": false
+    "failOnStatusCode": false,
+    
+    "retries": {
+        "runMode": 2,
+        "openMode": 0
+    }
+      
 }

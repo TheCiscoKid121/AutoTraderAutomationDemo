@@ -1,5 +1,6 @@
 name: Reusable workflow example
 on:
+  workflow_call:
   push:
     branches:
       - main

@@ -5,4 +5,4 @@ on:
       - main
 jobs:
   test-workflow:
-    uses: Github-Organisation-Test/workflows/.github/workflows/blank.yaml@main
+    uses: Github-Organisation-Test/workflows/.github/workflows/blank.yml@main

@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - master
-  jobs:
-    test-workflow:
-      uses: Github-Organisation-Test/workflows/.github/workflows/parentWorkflow.yml@main
+      
+jobs:
+  test-workflow:
+    uses: Github-Organisation-Test/workflows/.github/workflows/parentWorkflow.yml@main

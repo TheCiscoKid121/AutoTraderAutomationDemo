@@ -1,9 +1,9 @@
-name: Reusable workflow example
+name: Call workflow from Organisation repo
 on:
   workflow_call:
-  push:
-    branches:
-      - main
-jobs:
-  test-workflow:
-    uses: Github-Organisation-Test/workflows/.github/workflows/blank.yml@main
+    push:
+      branches:
+        - main
+  jobs:
+    test-workflow:
+      uses: Github-Organisation-Test/workflows/.github/workflows/blank.yml@main

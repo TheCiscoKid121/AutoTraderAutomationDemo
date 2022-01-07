@@ -1,9 +1,9 @@
 name: Call workflow from Organisation repo
 on:
-  workflow_call:
-    push:
-      branches:
-        - main
+  push:
+    branches:
+      - main
+      - master
   jobs:
     test-workflow:
-      uses: Github-Organisation-Test/workflows/.github/workflows/blank.yml@main
+      uses: Github-Organisation-Test/workflows/.github/workflows/parentWorkflow.yml@main

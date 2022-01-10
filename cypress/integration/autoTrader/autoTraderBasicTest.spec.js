@@ -1,18 +1,20 @@
 /// <reference types="cypress" />
 
 describe('example to-do app', () => {
-  beforeEach(() => {
-    cy.visit('https://www.autotrader.co.uk')
-  })
+  // beforeEach(() => {
+  //   cy.visit('https://www.autotrader.co.uk')
+  // })
 
   it('Check AutoTrader cookie iframe appears on the page and Accept All is clickable', () => {
 
+    cy.visit('https://www.autotrader.co.uk')
     cy.iframe().find('#notice > div.message-component.message-row > div.message-component.message-column.unstack > button.message-component.message-button.no-children.focusable.sp_choice_type_11.last-focusable-el').should('be.visible').click()
 
   })
 
   it('Click on new car label and check new page loads', () => {
 
+    cy.visit('https://www.autotrader.co.uk')
     cy.iframe().find('#notice > div.message-component.message-row > div.message-component.message-column.unstack > button.message-component.message-button.no-children.focusable.sp_choice_type_11.last-focusable-el').should('be.visible').click()
     cy.get(':nth-child(2) > .atds-primary-navigation__link').click()
     cy.url().should('include', 'https://www.autotrader.co.uk/cars/new')
@@ -21,6 +23,7 @@ describe('example to-do app', () => {
 
   it('Click on new car label and search for an "Alpine"', () => {
 
+    cy.visit('https://www.autotrader.co.uk')
     cy.iframe().find('#notice > div.message-component.message-row > div.message-component.message-column.unstack > button.message-component.message-button.no-children.focusable.sp_choice_type_11.last-focusable-el').should('be.visible').click()
     cy.get(':nth-child(2) > .atds-primary-navigation__link').click()
     cy.url().should('include', 'https://www.autotrader.co.uk/cars/new')

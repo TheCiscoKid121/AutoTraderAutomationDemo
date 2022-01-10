@@ -1,5 +1,5 @@
 {
-    "chromeWebSecurity": false,
+    "chromeWebSecurity": true,
     "failOnStatusCode": false,
     
     "retries": {

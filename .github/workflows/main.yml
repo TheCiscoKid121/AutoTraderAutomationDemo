@@ -1,9 +1,5 @@
 name: Call workflow from Organisation repo
-on:
-  push:
-    branches:
-      - main
-      - master
+on: push
       
 jobs:
   test-workflow:

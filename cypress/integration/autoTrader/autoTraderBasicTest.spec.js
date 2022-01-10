@@ -7,7 +7,7 @@ describe('example to-do app', () => {
 
   it('Check AutoTrader cookie iframe appears on the page and Accept All is clickable', () => {
 
-    cy.visit('https://www.autotrader.co.uk')
+    cy.visit('https://www.autotrader.co.uk/')
     cy.iframe().find('#notice > div.message-component.message-row > div.message-component.message-column.unstack > button.message-component.message-button.no-children.focusable.sp_choice_type_11.last-focusable-el').should('be.visible').click()
 
   })
